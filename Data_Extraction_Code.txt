@@ -1,0 +1,16 @@
+# Using the below module we can install convert pdf 2 word
+
+from pdf2docx import parse
+
+pdf_file = r''
+docx_file = r''
+
+parse(pdf_file, docx_file, start=0, end=1)
+
+
+# Using the below module we can install convert pdf 2 csv, but results are not always perfect
+
+import tabula
+df = (r'C:\Users\SaurabhM\Jupyter Project Files\My Works\Tourism\datas/data.pdf')
+output = r'C:\Users\SaurabhM\Jupyter Project Files\My Works\Tourism\datas/sample.csv'
+tabula.convert_into(df, output, output_format="csv", stream=True)
