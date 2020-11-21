@@ -2,6 +2,7 @@
 #Reference: https://github.com/ugis22/clustering_analysis/blob/master/clustering_analysis.ipynb
 
 
+
 def graph_histo(x):
     if x.dtype == "int64" or x.dtype == "float64":
         # Select size of bins by getting maximum and minimum and divide the substraction by 10
